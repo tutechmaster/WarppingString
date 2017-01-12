@@ -1,0 +1,12 @@
+//
+//  WarppingString.h
+//  WarppingString
+//
+//  Created by Tuuu on 1/12/17.
+//  Copyright © 2017 Tuuu. All rights reserved.
+//
+
+#define SMITH_NEPHEW_FONT_REGULAR(fontsize) [UIFont fontWithName:@"SmithNephew-Regular" size:fontsize]
+#ifndef MU_DEVICE_IS_IPAD
+#   define MU_DEVICE_IS_IPAD ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#endif

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="14" minValue="8" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="AOZ-xf-0X1">
+                                <rect key="frame" x="14" y="92" width="347" height="31"/>
+                                <connections>
+                                    <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="ObW-C1-ycF"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dd-pe-UXX">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="u5c-AJ-0pA"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sử dụng attributes để xuống dòng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49a-Uh-BgI">
+                                <rect key="frame" x="16" y="116" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tự viết" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNV-l5-Ubh">
+                                <rect key="frame" x="209" y="116" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE0-q5-xD9" customClass="DNLabel">
+                                <rect key="frame" x="209" y="153" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oX-yh-LtR">
+                                <rect key="frame" x="16" y="153" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4oX-yh-LtR" firstAttribute="top" secondItem="49a-Uh-BgI" secondAttribute="bottom" constant="16" id="5ea-d2-fXR"/>
+                            <constraint firstItem="49a-Uh-BgI" firstAttribute="width" secondItem="4oX-yh-LtR" secondAttribute="width" id="684-oA-lUo"/>
+                            <constraint firstItem="49a-Uh-BgI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8p6-5C-fA6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4dd-pe-UXX" secondAttribute="trailing" id="Dcl-v9-pyd"/>
+                            <constraint firstItem="ZE0-q5-xD9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="FK7-5h-TLO"/>
+                            <constraint firstItem="kNV-l5-Ubh" firstAttribute="top" secondItem="AOZ-xf-0X1" secondAttribute="bottom" constant="8" id="HY1-Cb-Y6o"/>
+                            <constraint firstItem="ZE0-q5-xD9" firstAttribute="centerY" secondItem="4oX-yh-LtR" secondAttribute="centerY" id="I2U-kG-Jwy"/>
+                            <constraint firstItem="ZE0-q5-xD9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KOK-q0-BHs"/>
+                            <constraint firstItem="AOZ-xf-0X1" firstAttribute="top" secondItem="4dd-pe-UXX" secondAttribute="bottom" constant="20" id="fX9-FK-Spf"/>
+                            <constraint firstItem="AOZ-xf-0X1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fpi-Tt-KAM"/>
+                            <constraint firstItem="4dd-pe-UXX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gDL-y4-xQe"/>
+                            <constraint firstItem="4oX-yh-LtR" firstAttribute="width" secondItem="ZE0-q5-xD9" secondAttribute="width" id="iWI-5J-9qw"/>
+                            <constraint firstItem="4dd-pe-UXX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jLO-U8-UzB"/>
+                            <constraint firstItem="49a-Uh-BgI" firstAttribute="top" secondItem="AOZ-xf-0X1" secondAttribute="bottom" constant="8" id="p1P-dY-d7A"/>
+                            <constraint firstItem="4oX-yh-LtR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="roG-oj-Goq"/>
+                            <constraint firstItem="kNV-l5-Ubh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sA3-G8-K5G"/>
+                            <constraint firstItem="AOZ-xf-0X1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uhq-TA-CbJ"/>
+                            <constraint firstItem="kNV-l5-Ubh" firstAttribute="width" secondItem="ZE0-q5-xD9" secondAttribute="width" id="v86-O1-dOt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_DisplayDefault" destination="4oX-yh-LtR" id="qXW-op-gM1"/>
+                        <outlet property="input" destination="4dd-pe-UXX" id="SDp-HW-hr5"/>
+                        <outlet property="lbl_Display" destination="ZE0-q5-xD9" id="Tgq-wT-sAy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
